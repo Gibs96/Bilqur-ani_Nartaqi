@@ -9,9 +9,20 @@
 /* Layout dasar responsif */
 body {
   font-family: 'Segoe UI', sans-serif;
-  background: #f4f4f4;
+  background: #2e2a2a;
   margin: 0;
   padding: 0;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+.wrapper {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 main {
@@ -32,6 +43,18 @@ header {
   box-sizing: border-box;
   overflow-wrap: break-word;
 }
+
+/* Content */
+.konten{
+  flex: 1; /* Mengisi ruang kosong antara navbar dan footer */
+  text-align: center;
+  color: #f5f1f1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
 
 /* Kotak putih responsif */
 #start-screen,
@@ -98,7 +121,7 @@ button:hover {
   font-size: 16px;
   padding: 14px;
   border-radius: 8px;
-  background-color: #F57C00;
+  background-color: #9c4c02;
   color: white;
   font-weight: bold;
 }
@@ -122,7 +145,7 @@ button:hover {
 .navbar {
   display: flex;
   align-items: center;
-  background-color: #F57C00;
+  background-color: #9c4c02;
   padding: 12px 16px;
   position: relative;
   width: 100%;
@@ -279,6 +302,71 @@ button:hover {
 .juz-grid a:hover {
   background-color: #e56b00;
 }
+
+/* footer */
+
+.footer {
+  position: relative;
+  width: 100%;
+  background: #9c4c02;
+  min-height: 100px;
+  padding: 20px 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.social-icon,
+.menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px 20px; /* jarak antar item */
+  margin: 10px 0;
+  padding: 0;
+}
+
+.social-icon__item,
+.menu__item {
+  list-style: none;
+}
+
+.social-icon__link {
+  font-size: 1rem;
+  color: #fff;
+  margin: 0 10px;
+  display: inline-block;
+  transition: 0.5s;
+}
+.social-icon__link:hover {
+  transform: translateY(-10px);
+}
+
+.menu__link {
+  font-size: 1rem;
+  color: #fff;
+  text-decoration: none;
+  opacity: 0.75;
+  font-weight: 300;
+  transition: 0.5s;
+}
+li a{
+  text-decoration: none;
+}
+.menu__link:hover {
+  opacity: 1;
+}
+.footer p {
+  color: #fff;
+  margin: 15px 0 10px 0;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+
 
     /* Responsive */
     @media (max-width: 768px) {
