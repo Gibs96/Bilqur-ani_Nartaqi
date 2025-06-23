@@ -1,5 +1,0 @@
-# Abaikan folder dan file ini
-node_modules/
-.vscode/
-*.log
-.DS_Store
